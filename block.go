@@ -73,6 +73,7 @@ const (
 	BlockTypeToDo             BlockType = "to_do"
 	BlockTypeToggle           BlockType = "toggle"
 	BlockTypeChildPage        BlockType = "child_page"
+	BlockTypeImage            BlockType = "image"
 	BlockTypeUnsupported      BlockType = "unsupported"
 )
 
