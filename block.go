@@ -48,7 +48,7 @@ type ChildPage struct {
 type Image struct {
 	Caption  []*RichText   `json:"caption,omitempty"`
 	Type     *string       `json:"type,omitempty"`
-	File     *ImageFile    `json:"checked,omitempty"`
+	File     *ImageFile    `json:"file,omitempty"`
 	External *ExternalFile `json:"external,omitempty"`
 }
 
