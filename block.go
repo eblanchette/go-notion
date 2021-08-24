@@ -47,12 +47,18 @@ type ChildPage struct {
 
 type Image struct {
 	// Caption []*string
-	Type *string    `json:"type,omitempty"`
-	File *ImageFile `json:"checked,omitempty"`
+	Type     *string       `json:"type,omitempty"`
+	File     *ImageFile    `json:"checked,omitempty"`
+	External *ExternalFile `json:"external,omitempty"`
 }
+
 type ImageFile struct {
 	URL        *string    `json:"url,omitempty"`
 	ExpiryTime *time.Time `json:"expiry_time,omitempty"`
+}
+
+type ExternalFile struct {
+	URL *string `json:"url,omitempty"`
 }
 
 type BlockType string
