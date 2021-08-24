@@ -24,6 +24,7 @@ type Block struct {
 	ToDo             *ToDo          `json:"to_do,omitempty"`
 	Toggle           *RichTextBlock `json:"toggle,omitempty"`
 	ChildPage        *ChildPage     `json:"child_page,omitempty"`
+	Image            *Image         `json:"image,omitempty"`
 }
 
 type RichTextBlock struct {
@@ -42,6 +43,16 @@ type ToDo struct {
 
 type ChildPage struct {
 	Title string `json:"title"`
+}
+
+type Image struct {
+	// Caption []*string
+	Type *string    `json:"type,omitempty"`
+	File *ImageFile `json:"checked,omitempty"`
+}
+type ImageFile struct {
+	URL        *string    `json:"url,omitempty"`
+	ExpiryTime *time.Time `json:"expiry_time,omitempty"`
 }
 
 type BlockType string
