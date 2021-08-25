@@ -46,16 +46,14 @@ type ChildPage struct {
 }
 
 type Image struct {
-	Caption  []*RichText   `json:"caption,omitempty"`
-	Type     *string       `json:"type,omitempty"`
-	Image    *ImageFile    `json:"image,omitempty"`
-	File     *ImageFile    `json:"file,omitempty"`
-	External *ExternalFile `json:"external,omitempty"`
+	Caption []*RichText `json:"caption,omitempty"`
+	Type    *string     `json:"type,omitempty"`
+	Image   *ImageFile  `json:"image,omitempty"`
 }
 
 type ImageFile struct {
-	URL        *string    `json:"url,omitempty"`
-	ExpiryTime *time.Time `json:"expiry_time,omitempty"`
+	Type     *string       `json:"type,omitempty"`
+	External *ExternalFile `json:"external,omitempty"`
 }
 
 type ExternalFile struct {
