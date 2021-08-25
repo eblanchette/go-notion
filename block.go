@@ -46,12 +46,7 @@ type ChildPage struct {
 }
 
 type Image struct {
-	Caption []*RichText `json:"caption,omitempty"`
-	Type    *string     `json:"type,omitempty"`
-	Image   *ImageFile  `json:"image,omitempty"`
-}
-
-type ImageFile struct {
+	Caption  []*RichText   `json:"caption,omitempty"`
 	Type     *string       `json:"type,omitempty"`
 	External *ExternalFile `json:"external,omitempty"`
 }
