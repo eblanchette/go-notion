@@ -51,6 +51,11 @@ type Image struct {
 	External *ExternalFile `json:"external,omitempty"`
 }
 
+type Icon struct {
+	Type  *string `json:"type,omitempty"`
+	Emoji *string `json:"emoji,omitempty"`
+}
+
 type ExternalFile struct {
 	URL *string `json:"url,omitempty"`
 }

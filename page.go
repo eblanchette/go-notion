@@ -77,6 +77,9 @@ type UpdatePageParams struct {
 	// Either DatabasePageProperties or Title must be not nil.
 	DatabasePageProperties *DatabasePageProperties
 	Title                  []RichText
+	Cover                  Image `json:"cover,omitempty"`
+	Icon                   Icon  `json:"icon,omitempty"`
+	Archive                bool  `json:"archive,omitempty"`
 }
 
 // Value returns the underlying database page property value, based on its `type` field.
